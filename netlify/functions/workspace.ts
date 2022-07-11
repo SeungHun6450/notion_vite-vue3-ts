@@ -14,8 +14,8 @@ const handler: Handler = async (event) => {
     'content-type': 'application/json',
     'apikey': APIKEY as string,
     'username': USERNAME as string
-  },
-  data
+    },
+    data
   })
   return {
     statusCode: 200,
