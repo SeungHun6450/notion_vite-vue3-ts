@@ -26,7 +26,9 @@ export default defineConfig({
     }
   },
   server: {
-    port: 2999
+    proxy: {
+      '/api': { target: 'http://localhost:2999' }
+    }
   },
   build: {
     rollupOptions: {
